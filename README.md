@@ -3,4 +3,5 @@ zanderman.github.io
 
 Public website repository for Alexander DeRieux.
 
-This is an update.
+The purpose of this page is to display professional skills, work experience, resume, and other related materials.
+
