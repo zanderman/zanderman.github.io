@@ -7,30 +7,34 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: "babel-loader",
+            },
+            {
+                test: /\.(js|tsx)$/,
+                exclude: /node_modules/,
+                use: "ts-loader",
             },
             {
                 test: /\.html$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    }
-                ]
+                exclude: /node_modules/,
+                use: "html-loader",
             }
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
-            components: path.resolve(__dirname, 'src', 'components')
-        }
+            components: path.resolve(__dirname, 'src', 'components'),
+        },
+    },
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: "./src/index.html",
-            filename: "./index.html"
-        })
-    ]
+            filename: "./index.html",
+        }),
+    ],
 };
