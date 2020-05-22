@@ -4,7 +4,10 @@
 
 import React, { Component } from 'react';
 
-class App extends Component {
+interface AppProps {}
+interface AppState {}
+
+class App extends Component<AppProps, AppState> {
 
     render() {
         return (
