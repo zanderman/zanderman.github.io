@@ -2,22 +2,28 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+    entry: path.resolve(__dirname, 'src', 'index.js'),
+    devtool: 'inline-source-map',
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use: "babel-loader",
+                use: 'babel-loader',
             },
             {
-                test: /\.(js|tsx)$/,
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
-                use: "ts-loader",
+                use: 'ts-loader',
             },
             {
                 test: /\.html$/,
                 exclude: /node_modules/,
-                use: "html-loader",
+                use: 'html-loader',
             }
         ]
     },
@@ -26,10 +32,6 @@ module.exports = {
         alias: {
             components: path.resolve(__dirname, 'src', 'components'),
         },
-    },
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
         new HtmlWebPackPlugin({
