@@ -57,6 +57,9 @@ minima:
     - title: LinkedIn
       icon: linkedin
       url: https://linkedin.com/in/alexderieux
+    - title: YouTube
+      icon: youtube
+      url: https://www.youtube.com/@zanderieux
     - title: ORCID
       icon: orcid
       url: https://orcid.org/0000-0003-1606-0668
