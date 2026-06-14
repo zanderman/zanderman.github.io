@@ -40,6 +40,11 @@ plugins:
   - jemoji
   - jekyll-gfm-admonitions
 
+# Set markdown engine.
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
 minima:
   skin: dark
   # nav_pages:
