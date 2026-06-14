@@ -9,7 +9,7 @@ layout: base
 <img src="https://raw.githubusercontent.com/zanderman/vitae/master/headshot.png" alt="Description" style="width: 300px; height: auto; border-radius: 15px;">
 <div>
 <h1 style="margin-bottom: 0px;">Alexander DeRieux</h1>
-<h3 style="margin-bottom: 5px;">:atom_symbol: :brain: Quantum AI Researcher</h3>
+<h3 style="margin-bottom: 5px;">:atom_symbol: :brain: Quantum AI <span markdown="1">$$\{$$ Scientist, Engineer, Developer $$\}$$</span></h3>
 <h4>:man_teacher: :turkey: Ph.D. Candidate @ Virginia Tech</h4>
 
 <p>Ph.D. candidate and industry professional with research experience in quantum computing, machine learning, software engineering, space systems, game theory, and wireless communications. Interested in designing quantum-native artificial intelligence systems that naturally leverage uniquely quantum properties to facilitate learning and operation within the quantum domain.</p>
