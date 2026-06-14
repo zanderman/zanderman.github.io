@@ -1,0 +1,23 @@
+---
+---
+// https://github.com/jekyll/minima/blob/master/assets/css/style.scss
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Vertical by default (for small screens) */
+  gap: 20px; /* Optional: adds space between items */
+}
+
+/* For large screens (992px and up) */
+@media screen and (min-width: 992px) {
+  .flex-container {
+    flex-direction: row; /* Switches to horizontal left-right */
+  }
+  
+  .flex-col {
+    flex: 1; /* Makes both columns take up equal width */
+  }
+}
