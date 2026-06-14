@@ -5,7 +5,7 @@
 layout: base
 ---
 
-<div class="media-block" style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 10px">
+<div class="media-block flex-container" style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 10px;">
 <img src="https://raw.githubusercontent.com/zanderman/vitae/master/headshot.png" alt="Description" style="width: 300px; height: auto; border-radius: 15px;">
 <div>
 <h1 style="margin-bottom: 0px;">Alexander DeRieux</h1>
@@ -43,6 +43,6 @@ Link | Title
 > [!TIP]
 > See my [:newspaper: cv](https://zanderman.github.io/vitae/cv) PDF, or [:newspaper: resume](https://zanderman.github.io/vitae/resume) PDF online.
 
-<object data="https://raw.githubusercontent.com/zanderman/vitae/master/derieux-cv.pdf" type="application/pdf" width="100%" height="500px">
+<iframe src="https://zanderman.github.io/vitae/cv" width="100%" height="600px" style="border: none">
     <p>Your browser does not support PDFs. <a href="https://raw.githubusercontent.com/zanderman/vitae/master/derieux-cv.pdf">Download the PDF</a>.</p>
-</object>
+</iframe>
